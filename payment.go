@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/accept-nano/accept-nano/nano"
+	"github.com/bitcoin-black/accept-nano/nano"
 	"github.com/cenkalti/log"
 	bolt "github.com/coreos/bbolt"
 	"github.com/shopspring/decimal"

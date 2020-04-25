@@ -10,7 +10,7 @@ import (
 	"github.com/golang/crypto/blake2b"
 )
 
-var workThreshold = uint64(0xffffffc000000000)
+var workThreshold = uint64(0xff00000000000000)
 
 func GenerateWork(hash string) (string, error) {
 	b, err := hex.DecodeString(hash)
