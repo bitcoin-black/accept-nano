@@ -1,16 +1,16 @@
 package main
 
 import (
-	"encoding/json"
+//	"encoding/json"
 	"errors"
-	"io/ioutil"
+//	"io/ioutil"
 	"net/http"
-	"net/url"
+//	"net/url"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/cenkalti/log"
+//	"github.com/cenkalti/log"
 	"github.com/shopspring/decimal"
 )
 
@@ -57,7 +57,7 @@ func getNanoPrice(currency string) (price decimal.Decimal, err error) {
 	}
 	currency = strings.ToUpper(currency)
 
-	mPrice.Lock()
+	/*mPrice.Lock()
 	defer mPrice.Unlock()
 
 	if cached, ok := prices[currency]; ok && time.Since(cached.FetchedAt) < priceUpdateInterval {
@@ -113,10 +113,12 @@ func getNanoPrice(currency string) (price decimal.Decimal, err error) {
 	if price.LessThanOrEqual(decimal.NewFromFloat(0)) {
 		err = errors.New("bad price")
 		return
-	}
+	}*/
+
+	price = decimal.NewFromFloat(0.1)
 	// Cache new value
 	prices[currency] = PriceWithTimestamp{
-		Price:     price,
+		Price:    price,
 		FetchedAt: time.Now(),
 	}
 	return
