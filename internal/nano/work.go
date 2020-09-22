@@ -11,8 +11,8 @@ import (
 )
 
 var (
-	workThresholdForSend uint64 = 0xfffffff800000000
-	workThresholdForRecv uint64 = 0xfffffe0000000000
+	workThresholdForSend uint64 = 0xff00000000000000
+	workThresholdForRecv uint64 = 0xff00000000000000
 )
 
 func GenerateWork(hash string, forSend bool) (string, error) {

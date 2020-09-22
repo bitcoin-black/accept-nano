@@ -108,7 +108,7 @@ var DefaultConfig = Config{
 	NodeWebsocketAckTimeout:       10 * time.Second,
 	NodeWebsocketKeepAlivePeriod:  time.Minute,
 	NodeTimeout:                   time.Minute,
-	Representative:                "nano_1ninja7rh37ehfp9utkor5ixmxyg8kme8fnzc4zty145ibch8kf5jwpnzr3r",
+	Representative:                "bcb_3k1t686z3hacjzigg3a4zrik4pgmsijxsad8r8ieo916ewfkr17n4wos8yq9",
 	ShutdownTimeout:               5 * time.Second,
 	RateLimit:                     "60-H",
 	ReceiveThreshold:              decimal.RequireFromString("0.001"),

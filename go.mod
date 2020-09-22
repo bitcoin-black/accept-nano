@@ -1,4 +1,4 @@
-module github.com/accept-nano/accept-nano
+module github.com/bitcoin-black/accept-nano
 
 go 1.13
 

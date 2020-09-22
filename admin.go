@@ -3,8 +3,7 @@ package main
 import (
 	"encoding/json"
 	"net/http"
-
-	"github.com/accept-nano/accept-nano/internal/nano"
+	"github.com/bitcoin-black/accept-nano/internal/nano"
 	"github.com/cenkalti/log"
 )
 
