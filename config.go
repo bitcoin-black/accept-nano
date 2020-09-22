@@ -100,8 +100,8 @@ type Config struct {
 var DefaultConfig = Config{
 	DatabasePath:                  "accept-nano.db",
 	ListenAddress:                 "127.0.0.1:8080",
-	NodeURL:                       "http://127.0.0.1:7076",
-	NodeWebsocketURL:              "ws://127.0.0.1:7078",
+	NodeURL:                       "http://127.0.0.1:9076",
+	NodeWebsocketURL:              "ws://127.0.0.1:9078",
 	NodeWebsocketHandshakeTimeout: 10 * time.Second,
 	NodeWebsocketWriteTimeout:     10 * time.Second,
 	NodeWebsocketAckTimeout:       10 * time.Second,
@@ -135,8 +135,8 @@ func (c *Config) Read() (err error) {
 	if err != nil {
 		return
 	}
-	err = k.Load(env.Provider("ACCEPTNANO_", ".", func(s string) string {
-		return strings.Replace(strings.TrimPrefix(s, "ACCEPTNANO_"), "_", ".", -1)
+	err = k.Load(env.Provider("ACCEPTBCB_", ".", func(s string) string {
+		return strings.Replace(strings.TrimPrefix(s, "ACCEPTBCB_"), "_", ".", -1)
 	}), nil)
 	if err != nil {
 		return

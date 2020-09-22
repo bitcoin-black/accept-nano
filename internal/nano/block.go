@@ -171,9 +171,9 @@ func accountToPublicKey(address string) (public []byte, err error) {
 	// The following 52 characters form the address, and the final
 	// 8 are a checksum.
 	switch {
-	case address[:5] == "nano_":
+	case address[:5] == "bcb_":
 		address = address[5:]
-	case address[:4] == "xrb_":
+	case address[:4] == "bcb_":
 		address = address[4:]
 	default:
 		err = errors.New("invalid address format")

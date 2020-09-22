@@ -74,5 +74,5 @@ func encodeAddress(pub []byte) string {
 	padded := append([]byte{0, 0, 0}, pub...)
 	address := addressEncoding.EncodeToString(padded)[4:]
 	checksum := addressEncoding.EncodeToString(calculateChecksum(pub))
-	return "nano_" + address + checksum
+	return "bcb_" + address + checksum
 }

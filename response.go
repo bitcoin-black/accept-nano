@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/accept-nano/accept-nano/internal/units"
+	"github.com/bitcoin-black/accept-nano/internal/units"
 	"github.com/shopspring/decimal"
 )
 

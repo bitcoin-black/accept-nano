@@ -62,14 +62,11 @@ func (p *API) GetNanoPrice(currency string) (price decimal.Decimal, err error) {
 		currency = "USD"
 	}
 	currency = strings.ToUpper(currency)
-
-<<<<<<< HEAD:internal/price/price.go
 	p.mPrice.Lock()
 	defer p.mPrice.Unlock()
-=======
+
 	/*mPrice.Lock()
 	defer mPrice.Unlock()
->>>>>>> d2875b1f8b5250741497918a50b19befda1de06d:price.go
 
 	if cached, ok := p.prices[currency]; ok && time.Since(cached.FetchedAt) < p.cacheDuration {
 		return cached.Price, nil
@@ -128,13 +125,8 @@ func (p *API) GetNanoPrice(currency string) (price decimal.Decimal, err error) {
 
 	price = decimal.NewFromFloat(0.1)
 	// Cache new value
-<<<<<<< HEAD:internal/price/price.go
 	p.prices[currency] = priceWithTimestamp{
 		Price:     price,
-=======
-	prices[currency] = PriceWithTimestamp{
-		Price:    price,
->>>>>>> d2875b1f8b5250741497918a50b19befda1de06d:price.go
 		FetchedAt: time.Now(),
 	}
 	return

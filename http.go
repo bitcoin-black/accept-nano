@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/accept-nano/accept-nano/internal/hub"
-	"github.com/accept-nano/accept-nano/internal/units"
+	"github.com/bitcoin-black/accept-nano/internal/hub"
+	"github.com/bitcoin-black/accept-nano/internal/units"
 	"github.com/cenkalti/log"
 	"github.com/rs/cors"
 	"github.com/shopspring/decimal"
@@ -97,11 +97,7 @@ func handlePay(w http.ResponseWriter, r *http.Request) {
 		amount = amountInCurrency.DivRound(price, 6)
 	} else {
 		amount = amountInCurrency
-<<<<<<< HEAD
-		currency = "BCB"
-=======
 		currency = "bcb"
->>>>>>> d2875b1f8b5250741497918a50b19befda1de06d
 	}
 	currency = strings.ToUpper(currency)
 	index, err := NewIndex()
