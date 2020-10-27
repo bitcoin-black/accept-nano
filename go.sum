@@ -1,5 +1,6 @@
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/accept-nano/accept-nano v1.6.3 h1:x9RNVRrGaLxe+M5mihsw4Wp8UpY6/37cuu5iOe8zK9I=
 github.com/accept-nano/ed25519-blake2b v1.0.0 h1:jVt9X/vBKBGz1SnCTYbDbR5LsaXDWuNOrKT1wxmKz08=
 github.com/accept-nano/ed25519-blake2b v1.0.0/go.mod h1:gMZe9uZlHRONgfZ9Vl4A3o5hsvYvQ2l9OHeTuobETqs=
 github.com/cenkalti/log v1.0.0 h1:0SITaDyovlmHFLaV+qenYmDxh8TNgxbJscMyn4W8XWk=

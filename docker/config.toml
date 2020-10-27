@@ -1,12 +1,22 @@
-# Path to the database file
-DatabasePath = "/opt/data/accept-nano.db"
-# Listen to all interfaces (in container) at 8080
-ListenAddress = "0.0.0.0:8080"
-# Your Nano node RPC URL
-NodeURL = "http://nano_node_1:7076/"
-# The WebSocket URL to your Nano node
-NodeWebsocketURL = "ws://nano_node_1:7078"
-# Set this to your merchant account.
-Account = "nano_1youraccount3fp9utkor5ixmxyg8kme8fnzc4zty145ibch8kf5jwpnzr3r"
+DatabasePath = "./accept-bcb.db"
+ListenAddress = "localhost:8080"
+NodeURL = "http://68.183.42.189:9076"
+# Don't forget to set your merchant account.
+Account = "bcb_3rrd5mccdp51kudezhaf74h4er7kbtg3gtdso4zbrena3zpbpnnh5xon9yqm"
+# Generate a new random seed with "accept-nano -seed" command and keep it secret.
+Seed = "01215AA0FCA0D8347F09B803198BAC8D370798BF58BFA46AAE5CE9BFFF138886"
+# Payment notifications will be sent to this URL (optional).
+NotificationURL = "http://localhost:5005"
 # CoinMarketCap API key. Available from https://coinmarketcap.com/api/
 CoinmarketcapAPIKey = "123ab456-cd78-90ef-ab12-34cd56ef7890"
+
+NodeWebsocketURL = "ws://68.183.42.189:9078"
+
+Representative = "bcb_1orcr76pgkauybpskwhuibpg6i9jync5oe9mm3zis8atgkkez34dwdo6ye1b"
+
+AdminPassword = "123456"
+
+
+#Private: A2D2D04868A97AA175B778D93898FD075A7745AEED35968B3086C68BFE78401D
+#Public: 6BE45D895E18ADB97699A0DADB0F3E91353F350BCC6A8EFC662C1EB7C115E664
+#Account: bcb_1tz6dp6ow87fq7ubma8tue9mx6bo9wtiqm5cjuy8ed1ypz1jdsm6r8htyh5p

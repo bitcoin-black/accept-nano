@@ -1,6 +1,6 @@
 FROM golang:1.15.2-alpine3.12
 
-WORKDIR /go/src/accept-nano
+WORKDIR /go/src/accept-bcb
 
 COPY go.mod go.sum ./
 RUN go mod download
@@ -15,7 +15,7 @@ RUN CGO_ENABLED=0 go install -ldflags="-s -w -X main.version=$VERSION -X main.co
 
 FROM alpine:3.12.0
 
-COPY --from=0 /go/bin/accept-nano /usr/bin/accept-nano
+COPY --from=0 /go/bin/accept-bcb /usr/bin/accept-bcb
 COPY docker ./docker
 
 CMD ["/bin/sh", "/docker/entry.sh"]

@@ -98,7 +98,7 @@ type Config struct {
 }
 
 var DefaultConfig = Config{
-	DatabasePath:                  "accept-nano.db",
+	DatabasePath:                  "accept-bcb.db",
 	ListenAddress:                 "127.0.0.1:8080",
 	NodeURL:                       "http://127.0.0.1:9076",
 	NodeWebsocketURL:              "ws://127.0.0.1:9078",

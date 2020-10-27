@@ -103,7 +103,7 @@ func blockCreate(previous, account, representative, balance, link, key, work str
 		err = errors.New("invalid balance value")
 		return
 	}
-	balInt.FillBytes(bal)
+	//balInt.FillBytes(bal)
 
 	var li []byte
 	if strings.HasPrefix(link, "nano_") || strings.HasPrefix(link, "xrb_") {
